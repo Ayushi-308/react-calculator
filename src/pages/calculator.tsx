@@ -50,6 +50,7 @@ function Calculator(){
           }
           operator=ch;
           num="";
+          
         }
         else{
            num = num + ch ;
