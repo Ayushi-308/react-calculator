@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Home1 from './pages/home1';
 import Home2 from './pages/home2';
 import Calculator from './pages/calculator';
+import Pictask from './pages/pictask';
 function App() {
   return (
     <div  >
@@ -15,6 +16,7 @@ function App() {
      <Home1/>
      <Home2/>
      <Calculator/>
+     <Pictask/>
     </div>
     
   );
