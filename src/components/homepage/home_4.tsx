@@ -1,4 +1,4 @@
-function Home1(){
+function Home_4(){
     return(
    <div >
        <div className=' ml-16 mt-20 '>
@@ -58,5 +58,4 @@ function Home1(){
    </div>  
   );
 }
-
-export default Home1;
+export default Home_4;

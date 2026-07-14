@@ -1,4 +1,4 @@
-function Home02(){
+function Home_2(){
     return(
         <div className="flex  mr-10" >
             <img className=" h-160 w-130 ml-10 mt-5" src="public\image 8.png"></img>
@@ -47,4 +47,4 @@ function Home02(){
         </div>
     );
 }
-export default Home02;
+export default Home_2;
