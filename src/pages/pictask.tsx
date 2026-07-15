@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
+
 function Pictask() {
     const pics =["public/landscape1.jpeg" , "public/landscape2.jpeg" , "public/landscape3.jpeg" , "public/landscape4.jpeg" , "public/landscape5.jpeg"];
     const [counts , setcounts ] =useState(1);
+    const[users,setusers]=useState();
     useEffect( () => {
-
-         const timer = setInterval(() => {
-        setcounts(prev =>
-            prev < pics.length ? prev + 1 : 1);
-        }, 1000);
-
-         return () => clearInterval(timer);
-        },[counts] );
-    
+        console.log("running");
+       fetch('https://dummyjson.com/users')
+         .then(res => res.json())
+        .then((data)=>{setusers(data)});
+        },
+        [] );
+    console.log(users,"userdata");
     return(
         <div className=" min-h-screen bg-slate-200 pt-20 pb-20">
            <div className="justify-self-center ">

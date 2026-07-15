@@ -8,6 +8,7 @@ function Header() {
             <Link to="/calculator" className=" px-3 py-2 rounded  ">Calculator</Link> 
             <Link to="/pictask" className="px-3 py-2 rounded  ">Image Slider </Link> 
             <Link to="/bmi" className=" px-3 py-2 rounded ">BMI Calculator</Link>
+            <Link to="/userdata" className=" px-3 py-2 rounded ">User Data</Link>
         </nav>
     </header>
   );
