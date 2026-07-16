@@ -1,23 +1,26 @@
-
 import './App.css'
-import Home01 from './pages/home01';
-import Home02 from './pages/home02';
-import Home from './pages/home';
-import Home1 from './pages/home1';
-import Home2 from './pages/home2';
+import Allhome from './pages/allhome';
 import Calculator from './pages/calculator';
 import Pictask from './pages/pictask';
+import BmiCalculator from './pages/bmicalculator';
+import { Routes, Route } from "react-router-dom";
+import MainLayout from './pages/mainlayout';
+import UserData from './pages/userdata';
+import ParticularUser from './pages/particularuser';
 function App() {
   return (
-    <div  >
-     <Home01/>
-     <Home02 />
-     <Home/>
-     <Home1/>
-     <Home2/>
-     <Calculator/>
-     <Pictask/>
-    </div>
+    
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+        <Route index element={<Allhome />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/pictask" element={<Pictask />} />
+        <Route path="/bmi" element={<BmiCalculator />} />
+        <Route path="/userdata" element={<UserData/>} />
+        <Route path="/userdata/:id" element={<ParticularUser/>} />
+        </Route>
+     </Routes>
+     
     
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
-function Home() {
-  const data=[
+function Home_3(){
+    const data=[
     {name:"xyz",image:"public/image1.png", description:"product",varients:["10mg","20mg"],price:10,comapare_price:15,borderhover:"border-orange-500"},
     {name:"abc", image:"public/image2.png", description:" for good health",varients:["10mg","20mg"],price:20,comapare_price:35 , borderhover:"border-blue-500"},
     {name:"xyz",image:"public/image3.png", description:"support tissue repair",varients:["10mg","20mg"],price:10,comapare_price:15 , borderhover:"border-purple-500"},
@@ -60,6 +60,5 @@ function Home() {
        </div>
      </div>
   );
-
 }
-export default Home;
+export default Home_3;

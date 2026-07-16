@@ -1,7 +1,6 @@
 
-
-function Home01(){
-    const boxes=[
+function Home_1(){
+     const boxes=[
         {pics:"public/home_icon1.svg" ,heading:"Research-Grade", content:"For laboratory research and analytical use only" },
         {pics:"public/icon2.2.svg" ,heading:"Premium Quality", content:"Strict quality protocols with ≤1% QC" },
         {pics:"public/home_icon3.svg" ,heading:"Rigorously Tested", content:"Third-party & in-house lab testing in every batch" },
@@ -13,20 +12,7 @@ function Home01(){
            
                 
             <img className="absolute pl-[32px]" src="public\SolPeptide logo.svg"></img>
-            <div className="absolute ml-[253px] flex gap-[10px] pt-4 text-sm">
-                <button>Home</button>
-                <select>
-                    <option>Peptides</option>
-                </select>
-                <select>
-                    <option>Quality</option>
-                </select>
-                <select>
-                    <option>Resources</option>
-                </select>
-                <button>About Us</button>
-                <button>Contact Us</button>
-            </div>
+           
             <div className="h-15 w-70 bg-white ml-223 flex justify-end rounded-3xl">               
                 <input className=" text-gray-500 text-sm w-50   " placeholder="Enter Your Product Name......."></input>
                 <img src="public\search icon.svg"></img>
@@ -82,4 +68,4 @@ function Home01(){
         </div>
     );
 }
-export default Home01;
+export default Home_1;

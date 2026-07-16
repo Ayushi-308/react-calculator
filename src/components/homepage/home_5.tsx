@@ -1,5 +1,5 @@
-function Home2(){
-    const flexbox=[
+function Home_5(){
+   const flexbox=[
         {stars:"★★★★★"},
         {stars:"★★★★★"},
         {stars:"★★★★★"}
@@ -39,4 +39,4 @@ function Home2(){
        </div> 
     );
 }
-export default Home2 ;
+export default Home_5;
