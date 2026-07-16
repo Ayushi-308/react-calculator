@@ -6,6 +6,7 @@ import BmiCalculator from './pages/bmicalculator';
 import { Routes, Route } from "react-router-dom";
 import MainLayout from './pages/mainlayout';
 import UserData from './pages/userdata';
+import ParticularUser from './pages/particularuser';
 function App() {
   return (
     
@@ -16,7 +17,8 @@ function App() {
         <Route path="/pictask" element={<Pictask />} />
         <Route path="/bmi" element={<BmiCalculator />} />
         <Route path="/userdata" element={<UserData/>} />
-       </Route>
+        <Route path="/userdata/:id" element={<ParticularUser/>} />
+        </Route>
      </Routes>
      
     
