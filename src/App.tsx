@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from './pages/mainlayout';
 import UserData from './pages/userdata';
 import ParticularUser from './pages/particularuser';
+import Login from './pages/userlogin';
 function App() {
   return (
     
@@ -18,6 +19,7 @@ function App() {
         <Route path="/bmi" element={<BmiCalculator />} />
         <Route path="/userdata" element={<UserData/>} />
         <Route path="/userdata/:id" element={<ParticularUser/>} />
+        <Route path="/userdata/login" element={<Login/>} />
         </Route>
      </Routes>
      
