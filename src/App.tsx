@@ -9,6 +9,7 @@ import UserData from './pages/userdata';
 import ParticularUser from './pages/particularuser';
 import Login from './pages/userlogin';
 import Profile from './pages/profilepage';
+import TodoList from './pages/todolist';
 function App() {
   return (
     
@@ -22,6 +23,7 @@ function App() {
         <Route path="/userdata/:id" element={<ParticularUser/>} />
         <Route path="/userdata/login" element={<Login/>} />
         <Route path="/userdata/login/profile" element={<Profile/>} />
+        <Route path="/todoList" element={<TodoList/>} />
         </Route>
      </Routes>
      
